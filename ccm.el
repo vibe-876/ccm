@@ -1,8 +1,9 @@
-(defun ccm-compile-and-run (makefile-directory)
+(defun ccm-compile-and-run (makefile-directory binary)
   "Test.disadsi"
-  (interactive "DMakefile Directory? ")
+  (interactive "DMakefile Directory? \nFBinary File? ")
   (let ((default-directory makefile-directory))
-    (compile "make")))
+    (compile "make")
+    (gdb binary)))
 
 (define-minor-mode ccm-mode
   "ccm-mode (Camilla's C Mode) is a minor mode
