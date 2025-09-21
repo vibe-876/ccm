@@ -1,0 +1,10 @@
+#+title: CCM
+#+author: Camilla
+
+
+Runs ~compile~, then ~gdb~.
+The non-trivial (for me, my elisp is yet to be mastered, this may seem trivial to you) part of this is the race condition (I think this is a race condition, described below).
+That is, getting ~gdb~ to run /after/ ~compile~ has finished, and running ~gdb~ iff ~compile~ was successful.
+I could probably also do some quality of life things, to be honest, I just want a lisp REPL while programming in C, and this is the closest things I can think of -- is that too much to ask.
+
+Not ready for use yet, give it some time.
